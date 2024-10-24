@@ -1,53 +1,181 @@
+/* Estilos básicos y de estructura */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     display: grid;
-    min-height: 100dvh;
+    min-height: 100vh;
     grid-template-rows: auto 1fr auto;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    color: #333;
 }
 
+/* Encabezado */
 .main-header {
-    background-color: #333;
+    background-color: #ff9800;
     color: white;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* Menú de navegación */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #ff9800;
+    text-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+}
+
+/* Contenido principal */
 .main-content {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1200px;
 }
 
-.purpose-section,
-.about-section {
+/* Secciones de propósito y sobre nosotros */
+.section1, .about-section {
     width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+.section1 h2, .about-section h2 {
+    color: #ff9800;
+    font-size: 1.8rem;
+}
+
+.section1 p, .about-section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Sección de contacto */
+.contact-section {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contact-section h2 {
+    font-size: 1.8rem;
+    color: #ff9800;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #e68900;
+}
+
+/* Sección de galería */
+.carousel {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .purpose-section, .about-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer */
 .main-footer {
-    background-color: #333;
+    background-color: #1e1e1e;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
 }

@@ -84,3 +84,39 @@ Una vez que hayan entregado su pull request, el destino del Proyecto Phoenix est
 El reto de **"Back to the Past - Proyecto Phoenix"** no es solo técnico, es un viaje en el tiempo, una misión para restaurar el código que una vez tuvo potencial. Esta actividad busca que los estudiantes no solo aprendan sobre **Git**, **HTML**, y **CSS**, sino que también experimenten lo que es trabajar en un proyecto real, colaborativo y basado en control de versiones.
 
 Como Restauradores del Tiempo, su objetivo es simple pero crucial: ¡salvar el código, salvar el futuro!
+
+
+## Mejoras Realizadas:
+Mejoras en el Código HTML:
+-Estructura semántica:
+
+Sección de Contacto añadida: Agregué un formulario con campos de entrada para "nombre", "email" y "mensaje", junto con un botón de envío. Esto le da más interactividad al sitio.
+Sección de Galería: Implementé un carrusel simple para mostrar imágenes, lo que mejora la presentación visual.
+Menú de navegación expandido:
+
+Añadí más enlaces (como "Servicios" y "Blog") al menú de navegación, para simular un sitio más completo y estructurado.
+
+
+
+Mejoras en el Código CSS:
+-Tipografía mejorada:
+
+Cambié la tipografía predeterminada a 'Helvetica Neue', Arial, sans-serif, una tipografía moderna y limpia que mejora la legibilidad y apariencia general.
+Responsividad optimizada:
+
+Añadí reglas CSS con @media queries para asegurar que el contenido se vea bien en pantallas pequeñas, reorganizando el contenido en columnas cuando es necesario.
+Efectos visuales:
+
+Sombra en encabezado y footer: Añadí sombras (box-shadow) para darle profundidad y modernidad.
+Bordes redondeados en las secciones para un diseño más suave y agradable.
+Efectos hover en el menú: Cuando el usuario pasa el ratón por encima de los enlaces, estos cambian de color y adquieren un pequeño resplandor naranja.
+Formulario estilizado:
+
+Se aplicaron bordes redondeados, espaciado y márgenes adecuados a los campos del formulario, haciendo que se vea más profesional.
+Botón interactivo: Añadí un botón de envío estilizado con efectos de transición, que cambia de color cuando el usuario pasa el cursor sobre él.
+Galería de imágenes:
+
+Añadí un contenedor flexible (display: flex) para las imágenes de la galería con un espaciado uniforme (gap: 20px), bordes redondeados y sombras para destacar cada imagen.
+Distribución del contenido:
+
+La distribución de las secciones se organizó utilizando Flexbox, lo que permite una mejor alineación y ajuste del contenido tanto en pantallas grandes como pequeñas.

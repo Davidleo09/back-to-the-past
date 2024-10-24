@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,15 +14,19 @@
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Sobre Nosotros</a></li>
           <li><a href="#">Contacto</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </nav>
     </header>
+
     <main class="main-content">
-      <section class="purpose-section">
+      <section class="section1">
         <h2>Nuestro Propósito</h2>
         <p>
           El Proyecto Phoenix busca conectar a las personas a través de una red
-          de conocimiento y colaboración.
+          de conocimiento y colaboración. Nuestro objetivo es brindar
+          oportunidades para el desarrollo de soluciones tecnológicas.
         </p>
       </section>
 
@@ -30,10 +34,39 @@
         <h2>Sobre Nosotros</h2>
         <p>
           Somos un equipo comprometido en brindar soluciones innovadoras a
-          problemas complejos.
+          problemas complejos. Nos enfocamos en la investigación, el
+          desarrollo y la implementación de proyectos tecnológicos.
         </p>
       </section>
+
+      <!-- Sección de Contacto -->
+      <section class="contact-section">
+        <h2>Contáctanos</h2>
+        <form action="submit-form.php" method="post">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <!-- Sección de Galería -->
+      <section class="carousel">
+        <h2>Galería</h2>
+        <div class="carousel-container">
+          <img src="./imagenes/imagen1.jpeg" alt="Innovación Tecnológica" />
+          <img src="./imagenes/imagen2.jpeg" alt="Red de Conocimiento" />
+          <img src="./imagenes/imagen3.jpeg" alt="Trabajo en equipo" />
+        </div>
+      </section>
     </main>
+
     <footer class="main-footer">
       <p>© 2024 Proyecto Phoenix. Todos los derechos reservados.</p>
     </footer>
